@@ -1,12 +1,5 @@
 import React from "react";
-import CProgramIcon from "../assets/icons/c-program-icon.svg";
-import CSSIcon from "../assets/icons/css-icon.svg";
-import GithubIcon from "../assets/icons/github-icon.svg";
-import FirebaseIcon from "../assets/icons/firebase-icon.svg";
-import HtmlIcon from "../assets/icons/html-icon.svg";
-import JavascriptIcon from "../assets/icons/javascript-icon.svg";
-import ReactJSIcon from "../assets/icons/react-js-icon.svg";
-import TailwindCSSIcon from "../assets/icons/tailwind-css-icon.svg";
+
 
 export default function Skills() {
   const cardClass =
@@ -20,16 +13,16 @@ export default function Skills() {
       </h2>
       <div className="grid grid-cols-3 gap-3.5 lg:grid-cols-4">
         <div className={cardClass}>
-          <img src={HtmlIcon} alt="html-icon" className={imgClass} />
+          <img src="assets/icons/html-icon.svg" alt="html-icon" className={imgClass} />
           <p className={textClass}>Html</p>
         </div>
         <div className={cardClass}>
-          <img src={CSSIcon} alt="css-icon" className={imgClass} />
+          <img src='assets/icons/css-icon.svg' alt="css-icon" className={imgClass} />
           <p className={textClass}>CSS</p>
         </div>
         <div className={cardClass}>
           <img
-            src={JavascriptIcon}
+            src="assets/icons/javascript-icon.svg"
             alt="javascript-icon"
             className={imgClass}
           />
@@ -37,29 +30,29 @@ export default function Skills() {
         </div>
 
         <div className={cardClass}>
-          <img src={ReactJSIcon} alt="react-js-icon" className={imgClass} />
+          <img src="assets/icons/react-js-icon.svg" alt="react-js-icon" className={imgClass} />
           <p className={textClass}>ReactJS</p>
         </div>
 
         <div className={cardClass}>
           <img
-            src={TailwindCSSIcon}
+            src="assets/icons/tailwind-css-icon.svg"
             alt="tailwind CSS-icon"
             className={imgClass}
           />
           <p className={textClass}>Tailwind CSS</p>
         </div>
         <div className={cardClass}>
-          <img src={CProgramIcon} alt="c-program-icon" className={imgClass} />
+          <img src="assets/icons/c-program-icon.svg" alt="c-program-icon" className={imgClass} />
           <p className={textClass}>C</p>
         </div>
         <div className={cardClass}>
-          <img src={FirebaseIcon} alt="firebase-icon" className={imgClass} />
+          <img src="assets/icons/firebase-icon.svg" alt="firebase-icon" className={imgClass} />
           <p className={textClass}>Firebase</p>
         </div>
 
         <div className={cardClass}>
-          <img src={GithubIcon} alt="github-icon" className={imgClass} />
+          <img src="assets/icons/github-icon.svg"alt="github-icon" className={imgClass} />
           <p className={textClass}>Github</p>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function About() {
           Developer
         </span>
       </h1>
-      <div className=" relative w-1/2 px-2 text-center   bg-[url('../../src/assets/self-img.jpg')] bg bg-cover bg-no-repeat">
+      <div className=" relative w-1/2 px-2 text-center   bg-[url('/assets/self-img.jpg')] bg bg-cover bg-no-repeat">
         <div className="absolute z-0 w-full h-full left-0 bg-black opacity-50"></div>
         <p className="relative  z-10 font-semibold text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl font-serif backdrop-blur-md max-w-md rounded-lg px-2 py-4">
           Hi, I'm
