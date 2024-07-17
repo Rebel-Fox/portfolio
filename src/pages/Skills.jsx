@@ -1,12 +1,12 @@
 import React from "react";
-import CProgramIcon from "../assets/icons/c-program-icon.svg";
-import CSSIcon from "../assets/icons/css-icon.svg";
-import GithubIcon from "../assets/icons/github-icon.svg";
-import FirebaseIcon from "../assets/icons/firebase-icon.svg";
-import HtmlIcon from "../assets/icons/html-icon.svg";
-import JavascriptIcon from "../assets/icons/javascript-icon.svg";
-import ReactJSIcon from "../assets/icons/react-js-icon.svg";
-import TailwindCSSIcon from "../assets/icons/tailwind-css-icon.svg";
+import CProgramIcon from "../../public/assets/icons/c-program-icon.svg";
+import CSSIcon from "../../public/assets/icons/css-icon.svg";
+import GithubIcon from "../../public/assets/icons/github-icon.svg";
+import FirebaseIcon from "../../public/assets/icons/firebase-icon.svg";
+import HtmlIcon from "../../public/assets/icons/html-icon.svg";
+import JavascriptIcon from "../../public/assets/icons/javascript-icon.svg";
+import ReactJSIcon from "../../public/assets/icons/react-js-icon.svg";
+import TailwindCSSIcon from "../../public/assets/icons/tailwind-css-icon.svg";
 
 export default function Skills() {
   const cardClass =
