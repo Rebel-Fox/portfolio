@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import ProjectsData from "../Data/ProjectsData";
 
+const linkClass = 'font-serif font-medium bg-neutral-200 rounded-lg p-4 hover:relative  hover:after:text-2xl hover:after: hover:after:absolute hover:after:left-0 hover:after:top-0 hover:after:w-full  hover:after:animate-slide-right hover:after:z-10 hover:after:rounded-lg hover:after:backdrop-blur-sm hover:after:flex hover:after:items-center hover:after:px-4'
 
 export default function Projects() {
   return (
@@ -17,7 +18,7 @@ export default function Projects() {
               to={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`font-serif font-medium bg-neutral-200 rounded-lg p-4 hover:relative  hover:after:text-2xl hover:after: hover:after:absolute hover:after:left-0 hover:after:top-0 hover:after:w-full  hover:after:animate-slide-right hover:after:z-10 hover:after:rounded-lg hover:after:backdrop-blur-sm hover:after:flex hover:after:items-center hover:after:px-4  hover:after:content-['${project.content}']`}
+              className={`${linkClass} hover:after:content-['${project.content}']`}
             >
               <img src={project.img} alt={`${project.name} app screenshot`} />
               <p className="mt-1">{project.name}</p>
