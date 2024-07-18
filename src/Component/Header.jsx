@@ -8,7 +8,7 @@ export default function Header() {
     "relative uppercase font-semibold after:absolute after:content-[''] after:left-0 after:bottom-[-1px] after:w-full after:h-1 after:bg-red-600";
   return (
     <header className="flex justify-between items-center px-6 py-6 border-b-2 border-neutral-200">
-      <NavLink to="/" className="text-4xl font-bold">
+      <NavLink to="/" className="text-4xl font-semibold">
         Vineet.
       </NavLink>
       <nav className="flex text-md gap-3.5">

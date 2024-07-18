@@ -2,9 +2,6 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import ProjectsData from "../Data/ProjectsData";
 
-// const linkClass =
-//   "font-serif font-medium bg-neutral-200 rounded-lg p-4 hover:relative  hover:after:text-2xl hover:after: hover:after:absolute hover:after:left-0 hover:after:top-0 hover:after:w-full  hover:after:animate-slide-right hover:after:z-10 hover:after:rounded-lg hover:after:backdrop-blur-sm hover:after:flex hover:after:items-center hover:after:px-4";
-
 export default function Projects() {
   return (
     <div className="flex-1 p-6 text-center ">
@@ -13,7 +10,6 @@ export default function Projects() {
       </h1>
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {ProjectsData.map((project, index) => {
-          // const projectClass =  `${linkClass} hover:after:content-['${project.content}']`
           return (
             <Link
               key={index}
