@@ -1,6 +1,15 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ProjectsData from "../Data/ProjectsData";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Blurhash } from "react-blurhash";
+import Image from "../Component/Img";
+
+const options = {
+  root: null, //means viewport
+  rootMargin: "0px",
+  threshold: "0.2",
+};
 
 export default function Projects() {
   return (
@@ -18,7 +27,8 @@ export default function Projects() {
               rel="noopener noreferrer"
               className={project.content}
             >
-              <img src={project.img} alt={`${project.name} app screenshot`} />
+              <Image src={project.img} placeholderSrc={project.placeholder} alt={`${project.name}'s screenshot`} className='w-full object-cover' />
+
               <p className="mt-1">{project.name}</p>
             </Link>
           );
@@ -27,4 +37,3 @@ export default function Projects() {
     </div>
   );
 }
-
