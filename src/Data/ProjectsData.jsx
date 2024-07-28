@@ -1,6 +1,4 @@
-
-
-const afterClass ='font-serif font-medium bg-neutral-200 rounded-lg p-4 hover:relative  hover:after:text-2xl sm:hover:after:text-xl md:hover:after:text-lg xl:hover:after:text-2xl hover:after: hover:after:absolute hover:after:left-0 hover:after:top-0 hover:after:w-full  hover:after:animate-slide-right hover:after:z-10 hover:after:rounded-lg hover:after:backdrop-blur-sm hover:after:bg-[rgba(0,0,0,0.5)] hover:after:text-white hover:after:flex hover:after:items-center hover:after:px-4 aspect-[1/1.1]'
+const afterClass ='font-serif font-medium bg-neutral-200 rounded-lg p-4  flex justify-between flex-col hover:relative  hover:after:text-2xl sm:hover:after:text-xl md:hover:after:text-lg xl:hover:after:text-2xl hover:after: hover:after:absolute hover:after:left-0 hover:after:top-0 hover:after:w-full  hover:after:animate-slide-right hover:after:z-10 hover:after:rounded-lg hover:after:backdrop-blur-sm hover:after:bg-[rgba(0,0,0,0.5)] hover:after:text-white hover:after:flex hover:after:items-center hover:after:px-4 aspect-[1/1.1]'
 
 const ProjectsData = [
   {

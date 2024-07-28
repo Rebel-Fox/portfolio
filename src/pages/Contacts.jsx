@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Link } from "react-router-dom";
+import Img from "../Component/Img";
 
 export default function Contacts() {
   return (
@@ -76,7 +77,7 @@ export default function Contacts() {
         </ul>
       </div>
       <picture className="p-10 flex items-center justify-center ">
-        <img src="./assets/about-img.jpeg" alt="image here " className="w-10/12 sm:w-9/12 xl:w-7/12 rounded-full" />
+        <Img placeholderSrc='./assets/about-img-small.jpeg' src="./assets/about-img.jpeg" alt="image here " className="w-10/12 sm:w-9/12 xl:w-7/12 rounded-full" />
       </picture>
     </div>
   );

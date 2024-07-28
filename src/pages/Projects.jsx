@@ -10,6 +10,12 @@ const options = {
   threshold: "0.2",
 };
 
+// React.useEffect(() => {
+//   const observer = new IntersectionObserver((entries,self) =>{
+//     const target = document.querySelectorAll('img')
+//   },options)
+// })
+
 export default function Projects() {
   return (
     <div className="flex-1 p-6 text-center ">
