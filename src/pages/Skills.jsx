@@ -1,5 +1,6 @@
 import React from "react";
-
+import SkillsData from "../Data/SkillsData";
+import Img from "../Component/Img";
 
 export default function Skills() {
   const cardClass =
@@ -12,49 +13,24 @@ export default function Skills() {
         Well versed in
       </h2>
       <div className="grid grid-cols-3 gap-3.5 lg:grid-cols-4">
-        <div className={cardClass}>
-          <img src="assets/icons/html-icon.svg" alt="html-icon" className={imgClass} />
-          <p className={textClass}>Html</p>
-        </div>
-        <div className={cardClass}>
-          <img src='assets/icons/css-icon.svg' alt="css-icon" className={imgClass} />
-          <p className={textClass}>CSS</p>
-        </div>
-        <div className={cardClass}>
-          <img
-            src="assets/icons/javascript-icon.svg"
-            alt="javascript-icon"
-            className={imgClass}
-          />
-          <p className={textClass}>JS</p>
-        </div>
+        {SkillsData.map(skill => {
+          const [img, setImg] = React.useState(false)
+          React.useEffect(() => {
+            const image = new Image()
+            image.src = skill.src
+            image.onload = () => setImg(true)
+          }, [])
+          return <>
+            <div className={cardClass}>
+              {!img && <div className="bg-slate-300 w-24 h-24 lg:w-28 lg:h-28 z-20"></div>}
+              {img && <Img src={skill.src}
+                alt={`${skill.name} icon`}
+                className={imgClass} />}
+              <p className={textClass}>{skill.name}</p>
+            </div>
+          </>
 
-        <div className={cardClass}>
-          <img src="assets/icons/react-js-icon.svg" alt="react-js-icon" className={imgClass} />
-          <p className={textClass}>ReactJS</p>
-        </div>
-
-        <div className={cardClass}>
-          <img
-            src="assets/icons/tailwind-css-icon.svg"
-            alt="tailwind CSS-icon"
-            className={imgClass}
-          />
-          <p className={textClass}>Tailwind CSS</p>
-        </div>
-        <div className={cardClass}>
-          <img src="assets/icons/c-program-icon.svg" alt="c-program-icon" className={imgClass} />
-          <p className={textClass}>C</p>
-        </div>
-        <div className={cardClass}>
-          <img src="assets/icons/firebase-icon.svg" alt="firebase-icon" className={imgClass} />
-          <p className={textClass}>Firebase</p>
-        </div>
-
-        <div className={cardClass}>
-          <img src="assets/icons/github-icon.svg"alt="github-icon" className={imgClass} />
-          <p className={textClass}>Github</p>
-        </div>
+        })}
       </div>
     </div>
   );
